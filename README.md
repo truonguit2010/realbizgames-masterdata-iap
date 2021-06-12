@@ -35,4 +35,4 @@ The JSON content will be:
 You can download and change the file [iap.json](Samples~/iap.json) if you want.
   
 ***Requirements:***
-1. Place the with with name "iap.json" in your ***Resources*** folder
+1. Place the file with name "iap.json" in your ***Resources*** folder
