@@ -37,5 +37,7 @@ You can download and change the file [iap.json](Samples~/iap.json) if you want.
 ***Requirements:***
 1. Place the file with name "iap.json" in your ***Resources*** folder
 
+![Guide](Samples~/Json_File_Location.png)
+
 # References
 1. [Versioning Unity Package with Git](https://docs.unity3d.com/Manual/upm-git.html)
