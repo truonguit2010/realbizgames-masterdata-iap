@@ -1,6 +1,7 @@
 ﻿{
 	"name": "RealbizGames.MasterData.IAP.Runtime",
 	"references": [
-		"RealBizGames.Data.Runtime"
+		"RealBizGames.Data.Runtime",
+		"RealBizGames.ChainPattern.Runtime"
     ]
 }
