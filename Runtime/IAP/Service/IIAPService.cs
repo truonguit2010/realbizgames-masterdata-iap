@@ -2,9 +2,9 @@
 
 public interface IIAPService : IService
 {
-    List<IAPDTO> GetAllIAPItems();
+    List<IAPDTO> GetAll();
 
-    List<IAPDTO> GetAllIAPItemsByType(IAPType type);
+    List<IAPDTO> GetAllByType(IAPType type);
 
-    IAPDTO GetById(IAPItemId id);
+    IAPDTO GetById(string id);
 }

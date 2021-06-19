@@ -8,4 +8,6 @@ public class IAPEntity
     public string android;
 
     public string type;
+
+    public string price;
 }

@@ -7,6 +7,8 @@ public class IAPDTOConvertor
     {
         IAPDTO dto = new IAPDTO();
 
+        dto.RowId = e.id;
+        
         dto.Id = Application.platform == RuntimePlatform.Android ? e.android : e.ios;
 
         if ("Non-Consumable" == e.type) {
@@ -16,6 +18,7 @@ public class IAPDTOConvertor
         } else {
             dto.Type = IAPType.Subsciption;
         }
+        dto.LocalizedPriceString = e.price;
         
         return dto;
     }

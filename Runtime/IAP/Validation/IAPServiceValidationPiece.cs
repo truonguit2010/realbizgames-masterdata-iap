@@ -23,7 +23,7 @@ public class IAPServiceValidationPiece : IAsynPieceExecutor
         #if UNITY_EDITOR
         UnityEngine.Debug.LogFormat("{0} - Execute", TAG);
         #endif
-        List<IAPDTO> dtos = iAPService.GetAllIAPItems();
+        List<IAPDTO> dtos = iAPService.GetAll();
         #if UNITY_EDITOR
         string msg = ToStringForList(dtos);
         UnityEngine.Debug.LogFormat("{0} - {1}", TAG, msg);

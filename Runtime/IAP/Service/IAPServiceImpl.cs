@@ -13,13 +13,13 @@ public class IAPServiceImpl : IIAPService
     }
 
 
-    public List<IAPDTO> GetAllIAPItems()
+    public List<IAPDTO> GetAll()
     {
         List<IAPEntity> es = MediationMasterDataRepository.FindAll();
         return IAPDTOConvertor.From(es);
     }
 
-    public List<IAPDTO> GetAllIAPItemsByType(IAPType type)
+    public List<IAPDTO> GetAllByType(IAPType type)
     {
         List<IAPEntity> es = MediationMasterDataRepository.FindAll();
         List<IAPDTO> dtos = IAPDTOConvertor.From(es);
@@ -35,10 +35,9 @@ public class IAPServiceImpl : IIAPService
         return valuatedList;
     }
 
-    public IAPDTO GetById(IAPItemId id)
+    public IAPDTO GetById(string id)
     {
-        string rawId = IAPItemIdConvertor.From(id);
-        IAPEntity e = MediationMasterDataRepository.FindById(rawId);
+        IAPEntity e = MediationMasterDataRepository.FindById(id);
         return IAPDTOConvertor.From(e);
     }
 
